@@ -1,68 +1,46 @@
-# Heart Attack Risk Predictor with EvalML
+# Parkinson's Disease Prediction
 
-## Overview
-
-This project aims to predict the risk of heart attacks using machine learning algorithms. The predictor is built using various algorithms and refined using EvalML to ensure the best performance. 
+This project leverages machine learning techniques to predict if a patient has Parkinson's disease based on audio/voice measurements. By analyzing a dataset with multiple voice features, the project aims to build an accurate model for early detection, supporting healthcare providers with diagnostic insights.
 
 ## Features
 
-- **Multiple Machine Learning Algorithms**: The project utilizes Logistic Regression, Decision Tree, Random Forest, K-nearest neighbors, and Support Vector Machines.
-- **Model Evaluation with EvalML**: The performance of the models is refined and evaluated using EvalML.
-- **Data Preprocessing**: The data is cleaned and preprocessed to ensure accurate predictions.
+- Processes and analyzes patient voice data for Parkinson's disease prediction.
+- Utilizes machine learning algorithms like Logistic Regression and Random Forest.
+- Evaluates model accuracy using metrics and visualization techniques.
 
 ## Installation
 
-To run this project locally, follow these steps:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/parkinsons-disease-prediction.git
+   cd parkinsons-disease-prediction
+   ```
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/heart-attack-predictor.git
-    cd heart-attack-predictor
-    ```
-
-2. **Create a virtual environment**:
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install the dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Install required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-1. **Run the Jupyter Notebook**:
-    ```bash
-    jupyter notebook
-    ```
-   
-2. Open the `Heart_Attack_Risk_Predictor_with_EvalML.ipynb` notebook and execute the cells to train and evaluate the models.
+1. Load and preprocess the dataset.
+2. Train and test the model using various classifiers.
+3. Evaluate the model's performance and visualize the results.
 
-## Project Structure
+## Files
 
-```
-.
-├── Heart_Attack_Risk_Predictor_with_EvalML.ipynb  # Main notebook for the project
-├── data                                           # Folder containing the dataset
-│   └── heart_disease_data.csv                     # Example dataset file
-├── requirements.txt                               # List of dependencies
-└── README.md                                      # Project README file
-```
+- **`Parkinson_s Disease Prediction.ipynb`**: Main Jupyter notebook containing the entire analysis and model building process.
+- **`parkinsons.data`**: Dataset containing the audio features used for model training.
 
-## Dataset
+## Requirements
 
-The dataset used for this project contains various features such as age, gender, blood pressure, cholesterol levels, etc., which are used to predict the likelihood of a heart attack.
+- Python 3.x
+- pandas
+- numpy
+- seaborn
+- matplotlib
+- scikit-learn
 
-## Models Used
+---
 
-- **Logistic Regression**
-- **Decision Tree**
-- **Random Forest**
-- **K-nearest Neighbors**
-- **Support Vector Machines**
-
-## Evaluation Metrics
-
-The models are evaluated using various metrics to determine their performance. EvalML is used to refine and improve the models.
+This README provides essential information about the project, setup, and usage for GitHub users and contributors. Let me know if you need further customization!
